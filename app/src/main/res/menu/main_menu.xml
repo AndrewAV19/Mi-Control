@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:showIn = "navigation_view">
+
+    <group
+        android:checkableBehavior="single">
+
+        <item
+            android:id="@+id/homee"
+            android:icon="@drawable/baseline_home_24"
+            android:title="@string/inicio"
+            />
+
+        <item android:id="@+id/citas"
+            android:icon="@drawable/baseline_content_paste_24"
+            android:title="@string/citas"
+            />
+        <item android:id="@+id/servicios"
+            android:icon="@drawable/baseline_face_retouching_natural_24"
+            android:title="@string/servicios"
+            />
+        <item android:id="@+id/talleres"
+            android:icon="@drawable/baseline_work_24"
+            android:title="@string/talleres"
+            />
+        <item android:id="@+id/inventario"
+            android:icon="@drawable/baseline_inventory_24"
+            android:title="@string/inventario"
+            />
+        <item android:id="@+id/ventas"
+            android:icon="@drawable/baseline_shopping_cart_24"
+            android:title="@string/ventas"
+            />
+        <item android:id="@+id/compras"
+            android:icon="@drawable/baseline_shopping_bag_24"
+            android:title="@string/COMPRAS"
+            />
+        <item android:id="@+id/ingresos"
+            android:icon="@drawable/baseline_monetization_on_24"
+            android:title="@string/INGRESOS"
+            />
+    </group>
+    <item android:title="@string/perfil">
+        <menu>
+            <group android:checkableBehavior="single">
+                <item android:id="@+id/about"
+                    android:icon="@drawable/baseline_account_circle_24"
+                    android:title="@string/acercaDe"
+                    />
+            </group>
+            <group android:checkableBehavior="single">
+                <item android:id="@+id/configuracion"
+                    android:icon="@drawable/baseline_settings_24"
+                    android:title="@string/configuracion"
+                    />
+            </group>
+
+
+        </menu>
+    </item>
+</menu>

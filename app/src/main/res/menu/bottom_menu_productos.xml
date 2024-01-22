@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:showIn = "navigation_view">
+
+    <item
+        android:id="@+id/home_producto"
+        android:title="Inicio"
+        android:icon="@drawable/homecitas_24"/>
+
+    <item
+        android:id="@+id/crear_producto"
+        android:title="Crear Cita"
+        android:icon="@drawable/baseline_add_circle_24"/>
+
+    <item android:id="@+id/editar_producto"
+        android:title="Editar"
+        android:icon="@drawable/baseline_edit_24"/>
+
+
+    <item android:id="@+id/historial_productos"
+        android:title="Historial"
+        android:icon="@drawable/baseline_content_paste_search_24"/>
+
+</menu>

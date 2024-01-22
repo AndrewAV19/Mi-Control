@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:showIn = "navigation_view">
+
+    <item
+        android:id="@+id/home_cita"
+        android:title="Inicio"
+        android:icon="@drawable/homecitas_24"/>
+
+    <item
+        android:id="@+id/crear_cita"
+        android:title="Crear Cita"
+        android:icon="@drawable/baseline_add_circle_24"/>
+
+    <item android:id="@+id/editar_cita"
+        android:title="Editar"
+        android:icon="@drawable/baseline_edit_24"/>
+
+    <item android:id="@+id/eliminar_cita"
+        android:title="Estatus"
+        android:icon="@drawable/baseline_monetization_on_24"/>
+
+    <item android:id="@+id/historial_citas"
+        android:title="Historial"
+        android:icon="@drawable/baseline_content_paste_search_24"/>
+
+</menu>

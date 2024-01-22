@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:showIn = "navigation_view">
+
+    <item
+        android:id="@+id/home_ingreso"
+        android:title="Inicio"
+        android:icon="@drawable/homecitas_24"/>
+
+    <item
+        android:id="@+id/ingreso_citas"
+        android:title="Ingreso Citas"
+        android:icon="@drawable/baseline_calendar_month_24"/>
+
+    <item android:id="@+id/ingreso_ventas"
+        android:title="Ingreso Ventas"
+        android:icon="@drawable/baseline_shopping_cart_24"/>
+
+    <item android:id="@+id/ingreso_ganancias_ventas"
+        android:title="Ingreso Ganancias Ventas"
+        android:icon="@drawable/baseline_attach_money_24"/>
+
+    <item android:id="@+id/ingreso_general"
+        android:title="Ingresos Generales"
+        android:icon="@drawable/baseline_point_of_sale_24"/>
+
+
+</menu>

@@ -1,0 +1,351 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:id="@+id/ingreso_gen"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context=".Ingreso_GeneralActivity"
+    android:background="@drawable/fondo_degradado">
+
+    <TextView
+        android:id="@+id/titulo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/GANANCIAS_TOTALES"
+        android:textSize="24dp"
+        android:layout_marginStart="70dp"
+        android:textColor="@color/white"/>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <ImageButton
+            android:id="@+id/buttonPrev"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="40dp"
+            android:src="@drawable/ic_arrow_left"
+
+            />
+
+        <TextView
+            android:id="@+id/textViewNoCitas"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:textColor="@color/white"
+            android:text="No tienes Ingresos este Año"
+            android:textAppearance="?android:textAppearanceMedium"
+            android:visibility="gone" />
+
+        <TextView
+            android:id="@+id/textViewDate"
+            android:layout_width="124dp"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_marginLeft="78dp"
+            android:layout_marginTop="49dp"
+            android:layout_marginStart="100dp"
+            android:layout_marginRight="114dp"
+            android:layout_toLeftOf="@id/buttonNext"
+            android:layout_toRightOf="@id/buttonPrev"
+            android:textAppearance="?android:textAppearanceMedium"
+            android:textColor="@color/white"
+            android:textSize="19dp" />
+
+        <ImageButton
+            android:id="@+id/buttonNext"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/ic_arrow_right"
+            android:layout_marginTop="40dp"
+            android:layout_alignParentEnd="true"
+           />
+
+
+        <TextView
+            android:id="@+id/enero"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/buttonPrev"
+            android:layout_marginTop="22dp"
+            android:layout_marginStart="12dp"
+            android:textColor="@color/white"
+            android:text="@string/ENERO"
+            android:textSize="22sp"/>
+
+        <TextView
+            android:id="@+id/precio_enero"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/buttonPrev"
+            android:layout_marginTop="22dp"
+            android:layout_marginStart="182dp"
+            android:textColor="@color/white"
+            android:text="$0"
+            android:textSize="22sp"/>
+
+        <TextView
+            android:id="@+id/febrero"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/enero"
+            android:layout_marginTop="10dp"
+            android:layout_marginStart="12dp"
+            android:textColor="@color/white"
+            android:text="@string/FEBRERO"
+            android:textSize="22sp"/>
+
+        <TextView
+            android:id="@+id/precio_febrero"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/enero"
+            android:layout_marginTop="10dp"
+            android:layout_marginStart="182dp"
+            android:textColor="@color/white"
+            android:text="$0"
+            android:textSize="22sp"/>
+
+        <TextView
+            android:id="@+id/marzo"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/febrero"
+            android:layout_marginTop="10dp"
+            android:layout_marginStart="12dp"
+            android:textColor="@color/white"
+            android:text="@string/MARZO"
+            android:textSize="22sp"/>
+
+        <TextView
+            android:id="@+id/precio_marzo"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/febrero"
+            android:layout_marginTop="10dp"
+            android:layout_marginStart="182dp"
+            android:textColor="@color/white"
+            android:text="$0"
+            android:textSize="22sp"/>
+
+        <TextView
+            android:id="@+id/abril"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/marzo"
+            android:layout_marginTop="10dp"
+            android:layout_marginStart="12dp"
+            android:textColor="@color/white"
+            android:text="@string/ABRIL"
+            android:textSize="22sp"/>
+
+        <TextView
+            android:id="@+id/precio_abril"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/marzo"
+            android:layout_marginTop="10dp"
+            android:layout_marginStart="182dp"
+            android:textColor="@color/white"
+            android:text="$0"
+            android:textSize="22sp"/>
+
+        <TextView
+            android:id="@+id/mayo"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/abril"
+            android:layout_marginTop="10dp"
+            android:layout_marginStart="12dp"
+            android:textColor="@color/white"
+            android:text="@string/MAYO"
+            android:textSize="22sp"/>
+
+        <TextView
+            android:id="@+id/precio_mayo"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/abril"
+            android:layout_marginTop="10dp"
+            android:layout_marginStart="182dp"
+            android:textColor="@color/white"
+            android:text="$0"
+            android:textSize="22sp"/>
+
+        <TextView
+            android:id="@+id/junio"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/mayo"
+            android:layout_marginTop="10dp"
+            android:layout_marginStart="12dp"
+            android:textColor="@color/white"
+            android:text="@string/JUNIO"
+            android:textSize="22sp"/>
+
+        <TextView
+            android:id="@+id/precio_junio"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/mayo"
+            android:layout_marginTop="10dp"
+            android:layout_marginStart="182dp"
+            android:textColor="@color/white"
+            android:text="$0"
+            android:textSize="22sp"/>
+
+        <TextView
+            android:id="@+id/julio"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/junio"
+            android:layout_marginTop="10dp"
+            android:layout_marginStart="12dp"
+            android:textColor="@color/white"
+            android:text="@string/JULIO"
+            android:textSize="22sp"/>
+
+        <TextView
+            android:id="@+id/precio_julio"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/junio"
+            android:layout_marginTop="10dp"
+            android:layout_marginStart="182dp"
+            android:textColor="@color/white"
+            android:text="$0"
+            android:textSize="22sp"/>
+
+        <TextView
+            android:id="@+id/agosto"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/julio"
+            android:layout_marginTop="10dp"
+            android:layout_marginStart="12dp"
+            android:textColor="@color/white"
+            android:text="@string/AGOSTO"
+            android:textSize="22sp"/>
+
+        <TextView
+            android:id="@+id/precio_agosto"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/julio"
+            android:layout_marginTop="10dp"
+            android:layout_marginStart="182dp"
+            android:textColor="@color/white"
+            android:text="$0"
+            android:textSize="22sp"/>
+
+        <TextView
+            android:id="@+id/septiembre"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/agosto"
+            android:layout_marginTop="10dp"
+            android:layout_marginStart="12dp"
+            android:textColor="@color/white"
+            android:text="@string/SEPTIEMBRE"
+            android:textSize="22sp"/>
+
+        <TextView
+            android:id="@+id/precio_septiembre"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/agosto"
+            android:layout_marginTop="10dp"
+            android:layout_marginStart="182dp"
+            android:textColor="@color/white"
+            android:text="$0"
+            android:textSize="22sp"/>
+
+        <TextView
+            android:id="@+id/octubre"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/septiembre"
+            android:layout_marginTop="10dp"
+            android:layout_marginStart="12dp"
+            android:textColor="@color/white"
+            android:text="@string/OCTUBRE"
+            android:textSize="22sp"/>
+
+        <TextView
+            android:id="@+id/precio_octubre"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/septiembre"
+            android:layout_marginTop="10dp"
+            android:layout_marginStart="182dp"
+            android:textColor="@color/white"
+            android:text="$0"
+            android:textSize="22sp"/>
+
+        <TextView
+            android:id="@+id/noviembre"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/octubre"
+            android:layout_marginTop="10dp"
+            android:layout_marginStart="12dp"
+            android:textColor="@color/white"
+            android:text="@string/NOVIEMBRE"
+            android:textSize="22sp"/>
+
+        <TextView
+            android:id="@+id/precio_noviembre"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/octubre"
+            android:layout_marginTop="10dp"
+            android:layout_marginStart="182dp"
+            android:textColor="@color/white"
+            android:text="$0"
+            android:textSize="22sp"/>
+
+        <TextView
+            android:id="@+id/diciembre"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/noviembre"
+            android:layout_marginTop="10dp"
+            android:layout_marginStart="12dp"
+            android:textColor="@color/white"
+            android:text="@string/DICIEMBRE"
+            android:textSize="22sp"/>
+
+        <TextView
+            android:id="@+id/precio_diciembre"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/noviembre"
+            android:layout_marginTop="10dp"
+            android:layout_marginStart="182dp"
+            android:textColor="@color/white"
+            android:text="$0"
+            android:textSize="22sp"/>
+
+
+    </RelativeLayout>
+
+    <com.google.android.material.bottomnavigation.BottomNavigationView
+        android:id="@+id/bottomNavigationView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_marginTop="30dp"
+        android:layout_marginBottom="0dp"
+        android:background="@drawable/fondo_degradado"
+        android:elevation="2dp"
+        app:itemIconSize="30dp"
+        app:itemIconTint="@drawable/item_selector"
+        app:itemRippleColor="@android:color/transparent"
+        app:labelVisibilityMode="unlabeled"
+        app:menu="@menu/bottom_menu_ingresos" />
+
+</RelativeLayout>

@@ -1,0 +1,203 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:id="@+id/ver_c"
+    android:background="@drawable/fondo_degradado"
+    tools:context=".VerCita">
+
+    <!-- TODO: Update blank fragment layout -->
+
+    <TextView
+        android:id="@+id/textView4"
+        android:layout_width="200dp"
+        android:layout_height="51dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginStart="91dp"
+        android:layout_marginTop="31dp"
+        android:autoSizeTextType="uniform"
+        android:text="@string/EditarCita"
+        android:textColor="#FFFFFF"
+        android:textSize="30sp" />
+
+    <TextView
+        android:id="@+id/nom"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="15dp"
+        android:text="@string/NOMBRE"
+        android:textColor="@color/white"
+        android:layout_below="@+id/textView4"/>
+
+    <EditText
+        android:id="@+id/name"
+        android:layout_width="322dp"
+        android:layout_height="48dp"
+        android:layout_below="@+id/nom"
+        android:layout_alignParentStart="true"
+        android:layout_marginStart="15dp"
+        android:layout_marginTop="0dp"
+        android:layout_marginBottom="-50dp"
+        android:ems="10"
+        android:hint="@string/escribeNombre"
+        android:inputType="textPersonName"
+        android:text=""
+        android:textColor="#FFFFFF"
+        android:textColorHint="#FFFFFF"
+        android:textSize="20sp" />
+
+
+    <TextView
+        android:id="@+id/tel"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="15dp"
+        android:layout_marginTop="55dp"
+        android:text="@string/TELEFONO"
+        android:textColor="@color/white"
+        android:layout_below="@+id/name"/>
+
+    <EditText
+        android:id="@+id/phone"
+        android:layout_width="322dp"
+        android:layout_height="48dp"
+        android:layout_below="@+id/tel"
+        android:layout_alignParentStart="true"
+        android:layout_marginStart="15dp"
+        android:layout_marginTop="0dp"
+        android:layout_marginBottom="8dp"
+        android:ems="10"
+        android:hint="@string/ingresaTelefono"
+        android:inputType="phone"
+        android:text=""
+        android:textColor="#FFFFFF"
+        android:textColorHint="#FFFFFF"
+        android:textSize="20sp" />
+
+
+    <ImageButton
+        android:id="@+id/calendario"
+        android:layout_width="58dp"
+        android:layout_height="58dp"
+        android:layout_below="@+id/phone"
+        android:layout_marginStart="15dp"
+        android:layout_marginTop="0dp"
+        android:onClick="abrirCalendario"
+        app:srcCompat="@drawable/baseline_calendar_month_24"
+        />
+
+    <EditText
+        android:id="@+id/calendario_txt"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/calendario"
+        android:layout_marginStart="19dp"
+        android:layout_marginTop="-57dp"
+        android:layout_toEndOf="@+id/calendario"
+        android:hint="@string/ingresaFecha"
+        android:inputType="date"
+        android:text=""
+        android:textColor="#FFFFFF"
+        android:textSize="20sp" />
+
+    <ImageButton
+        android:id="@+id/hora"
+        android:layout_width="58dp"
+        android:layout_height="58dp"
+        android:layout_below="@+id/calendario_txt"
+        android:layout_marginStart="15dp"
+        android:layout_marginTop="10dp"
+        android:onClick="abrirHora"
+        app:srcCompat="@drawable/baseline_access_time_24"
+        />
+
+
+    <EditText
+        android:id="@+id/hora_txt"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/hora"
+        android:layout_marginStart="14dp"
+        android:layout_marginTop="-54dp"
+        android:layout_toEndOf="@+id/hora"
+        android:hint="@string/ingresaHora"
+        android:inputType="date"
+        android:text=""
+        android:textColor="#FFFFFF"
+        android:textSize="20sp" />
+
+
+    <Spinner
+        android:id="@+id/servicio"
+        android:layout_width="322dp"
+        android:layout_height="48dp"
+        android:layout_below="@+id/hora_txt"
+        android:layout_alignParentStart="true"
+        android:layout_marginStart="15dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginBottom="8dp"
+        android:ems="10"
+        android:hint="@string/ingresaServicio"
+        android:text=""
+        android:textColor="#FFFFFF"
+        android:textColorHint="#FFFFFF"
+        android:textSize="20sp"
+        android:background="@drawable/spinner_background"
+        android:spinnerStyle="@style/SpinnerStyle"
+        />
+
+    <TextView
+        android:id="@+id/inf"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="15dp"
+        android:text="@string/infoAdicional"
+        android:textColor="@color/white"
+        android:layout_below="@+id/servicio"/>
+
+    <EditText
+        android:id="@+id/informacion_adicional"
+        android:layout_width="322dp"
+        android:layout_height="148dp"
+        android:layout_below="@+id/inf"
+        android:layout_alignParentStart="true"
+        android:layout_marginStart="15dp"
+        android:layout_marginTop="0dp"
+        android:layout_marginBottom="-50dp"
+        android:ems="10"
+        android:hint="@string/infoAdicional"
+        android:inputType="textMultiLine"
+        android:text=""
+        android:textColor="#FFFFFF"
+        android:textColorHint="#FFFFFF"
+        android:textSize="20sp" />
+
+
+
+
+
+
+    <ImageButton
+        android:id="@+id/añadir"
+        android:layout_width="72dp"
+        android:layout_height="72dp"
+        android:layout_below="@+id/informacion_adicional"
+        android:layout_marginStart="90dp"
+        android:layout_marginTop="60dp"
+        app:srcCompat="@drawable/baseline_edit_24"
+        />
+
+    <ImageButton
+        android:id="@+id/eliminar"
+        android:layout_width="72dp"
+        android:layout_height="72dp"
+        android:layout_below="@+id/informacion_adicional"
+        android:layout_marginStart="180dp"
+        android:layout_marginTop="60dp"
+        app:srcCompat="@drawable/baseline_delete_24"
+         />
+
+</RelativeLayout>

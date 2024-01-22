@@ -1,0 +1,115 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:id="@+id/ver_s"
+    android:background="@drawable/fondo_degradado"
+    tools:context=".VerCita">
+
+    <!-- TODO: Update blank fragment layout -->
+
+    <TextView
+        android:id="@+id/textView4"
+        android:layout_width="200dp"
+        android:layout_height="51dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginStart="91dp"
+        android:layout_marginTop="31dp"
+        android:autoSizeTextType="uniform"
+        android:text="@string/editarServicio"
+        android:textColor="#FFFFFF"
+        android:textSize="30sp" />
+
+    <TextView
+        android:id="@+id/nom"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="15dp"
+        android:layout_marginTop="20dp"
+        android:text="@string/SERVICIO"
+        android:textColor="@color/white"
+        android:layout_below="@+id/textView4"/>
+
+
+    <EditText
+        android:id="@+id/servicio"
+        android:layout_width="322dp"
+        android:layout_height="48dp"
+        android:layout_below="@+id/nom"
+        android:layout_alignParentStart="true"
+        android:layout_marginStart="15dp"
+        android:layout_marginTop="0dp"
+        android:layout_marginBottom="-50dp"
+        android:ems="10"
+        android:hint="@string/ingresaServicio"
+        android:inputType="textPersonName"
+        android:text=""
+        android:textColor="#FFFFFF"
+        android:textColorHint="#FFFFFF"
+        android:textSize="20sp" />
+
+    <TextView
+        android:id="@+id/pre"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="15dp"
+        android:layout_marginTop="60dp"
+        android:text="@string/PR"
+        android:textColor="@color/white"
+        android:layout_below="@+id/servicio"/>
+
+
+    <EditText
+        android:id="@+id/precio"
+        android:layout_width="322dp"
+        android:layout_height="48dp"
+        android:layout_below="@+id/pre"
+        android:layout_alignParentStart="true"
+        android:layout_marginStart="15dp"
+        android:layout_marginTop="0dp"
+        android:layout_marginBottom="8dp"
+        android:ems="10"
+        android:hint="@string/ingresaPrecioServicio"
+        android:inputType="phone"
+        android:text=""
+        android:textColor="#FFFFFF"
+        android:textColorHint="#FFFFFF"
+        android:textSize="20sp" />
+
+
+    <ImageView
+        android:id="@+id/imagenLogo"
+        android:layout_width="200dp"
+        android:layout_height="200dp"
+        android:layout_below="@+id/precio"
+        android:layout_marginTop="50dp"
+        android:layout_marginStart="80dp"
+        android:src="@drawable/baseline_image_24" />
+
+
+
+    <ImageButton
+        android:id="@+id/añadir"
+        android:layout_width="72dp"
+        android:layout_height="72dp"
+        android:layout_below="@+id/imagenLogo"
+        android:layout_marginStart="90dp"
+        android:layout_marginTop="50dp"
+        app:srcCompat="@drawable/baseline_edit_24"
+        />
+
+    <ImageButton
+        android:id="@+id/eliminar"
+        android:layout_width="72dp"
+        android:layout_height="72dp"
+        android:layout_below="@+id/imagenLogo"
+        android:layout_marginStart="180dp"
+        android:layout_marginTop="50dp"
+        app:srcCompat="@drawable/baseline_delete_24"
+         />
+
+
+</RelativeLayout>

@@ -1,0 +1,162 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    package="com.example.micontrol">
+
+    <uses-permission android:name="android.permission.POST_NOTIFICATIONS" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.CAMERA" />
+    <uses-permission android:name="android.permission.SET_ALARM" />
+    <uses-permission android:name="android.permission.VIBRATE" />
+    <uses-permission android:name="android.permission.FOREGROUND_SERVICE" />
+    <uses-permission android:name="android.permission.RECEIVE_BOOT_COMPLETED" />
+    <uses-permission android:name="android.permission.WAKE_LOCK" />
+    <uses-permission android:name="android.permission.SEND_SMS" />
+
+    <uses-feature android:name="android.hardware.camera" />
+    <uses-feature android:name="android.hardware.camera.autofocus" />
+
+    <application
+        android:allowBackup="true"
+        android:dataExtractionRules="@xml/data_extraction_rules"
+        android:fullBackupContent="@xml/backup_rules"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.MiControl"
+        tools:targetApi="31">
+        <activity
+            android:name=".VerCompra"
+            android:exported="false" />
+        <activity
+            android:name=".Ingreso_CompraActivity"
+            android:exported="false" />
+        <activity
+            android:name=".HistorialComprasActivity"
+            android:exported="false" />
+        <activity
+            android:name=".IngresosComprasActivity"
+            android:exported="false" />
+        <activity
+            android:name=".EditarCompraActivity"
+            android:exported="false" />
+        <activity
+            android:name=".CrearCompraActivity"
+            android:exported="false" />
+        <activity
+            android:name=".Ingreso_GeneralActivity"
+            android:exported="false" />
+        <activity
+            android:name=".Ingreso_Ganancias_VentaActivity"
+            android:exported="false" />
+        <activity
+            android:name=".Ingreso_VentaActivity"
+            android:exported="false" />
+        <activity
+            android:name=".Ingreso_CitaActivity"
+            android:exported="false" />
+        <activity
+            android:name=".IngresosVentasActivity"
+            android:exported="false" />
+        <activity android:name=".CustomCaptureActivity" />
+        <activity
+            android:name=".VerVenta"
+            android:exported="false" />
+        <activity
+            android:name=".HistorialVentasActivity"
+            android:exported="false" />
+        <activity
+            android:name=".EditarVentaActivity"
+            android:exported="false" />
+        <activity
+            android:name=".CrearVentaActivity"
+            android:exported="false" />
+        <activity
+            android:name=".VerProducto"
+            android:exported="false" />
+        <activity
+            android:name=".HistorialProductosActivity"
+            android:exported="false" />
+        <activity
+            android:name=".EditarProductoActivity"
+            android:exported="false" />
+        <activity
+            android:name=".CrearProductoActivity"
+            android:exported="false" />
+        <activity
+            android:name=".VerTaller"
+            android:exported="false" />
+        <activity
+            android:name=".EditarTallerActivity"
+            android:exported="false" />
+        <activity
+            android:name=".HistorialTalleresActivity"
+            android:exported="false" />
+        <activity
+            android:name=".CrearTallerActivity"
+            android:exported="false" />
+        <activity
+            android:name=".VerServicio"
+            android:exported="false" />
+        <activity
+            android:name=".HistorialServiciosActivity"
+            android:exported="false" />
+        <activity
+            android:name=".EditarServicioActivity"
+            android:exported="false" />
+        <activity
+            android:name=".CrearServicioActivity"
+            android:exported="false" />
+        <activity
+            android:name=".VerCita"
+            android:exported="false" />
+        <activity
+            android:name=".HistorialCitasActivity"
+            android:exported="false" />
+        <activity
+            android:name=".EstatusCitaActivity"
+            android:exported="false" />
+        <activity
+            android:name=".EditarCitaActivity"
+            android:exported="false" />
+        <activity
+            android:name=".CrearCitaActivity"
+            android:exported="false" />
+        <activity
+            android:name=".Pantalla_De_Carga"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".MainActivity"
+            android:exported="true"
+            android:theme="@style/Theme.AppCompat.Light.NoActionBar">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="com.theartofdev.edmodo.cropper.CropImageActivity"
+            android:theme="@style/Theme.AppCompat.Light.DarkActionBar" />
+
+        <receiver android:name=".AlarmReceiver" />
+
+        <provider
+            android:name="androidx.core.content.FileProvider"
+            android:authorities="com.example.micontrol.fileprovider"
+            android:exported="false"
+            android:grantUriPermissions="true">
+            <meta-data
+                android:name="android.support.FILE_PROVIDER_PATHS"
+                android:resource="@xml/file_paths" />
+        </provider>
+    </application>
+
+</manifest>

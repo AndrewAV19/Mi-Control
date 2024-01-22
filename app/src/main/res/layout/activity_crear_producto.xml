@@ -1,0 +1,182 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:id="@+id/crear_p"
+    android:background="@drawable/fondo_degradado"
+    tools:context=".CrearProductoActivity">
+
+    <!-- TODO: Update blank fragment layout -->
+
+    <TextView
+        android:id="@+id/textView4"
+        android:layout_width="200dp"
+        android:layout_height="51dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginStart="91dp"
+        android:layout_marginTop="31dp"
+        android:autoSizeTextType="uniform"
+        android:text="@string/crearProducto"
+        android:textColor="#FFFFFF"
+        android:textSize="30sp" />
+
+    <EditText
+        android:id="@+id/codigo"
+        android:layout_width="222dp"
+        android:layout_height="48dp"
+        android:layout_below="@+id/textView4"
+        android:layout_alignParentStart="true"
+        android:layout_marginStart="15dp"
+        android:layout_marginTop="30dp"
+        android:layout_marginBottom="-50dp"
+        android:ems="10"
+        android:hint="@string/ingresaCodigo"
+        android:inputType="phone"
+        android:text=""
+        android:textColor="#FFFFFF"
+        android:textColorHint="#FFFFFF"
+        android:textSize="20sp" />
+
+
+    <EditText
+        android:id="@+id/producto"
+        android:layout_width="322dp"
+        android:layout_height="48dp"
+        android:layout_below="@+id/codigo"
+        android:layout_alignParentStart="true"
+        android:layout_marginStart="15dp"
+        android:layout_marginTop="40dp"
+        android:layout_marginBottom="-50dp"
+        android:ems="10"
+        android:hint="@string/ingresaProducto"
+        android:inputType="textPersonName"
+        android:text=""
+        android:textColor="#FFFFFF"
+        android:textColorHint="#FFFFFF"
+        android:textSize="20sp" />
+
+    <EditText
+        android:id="@+id/precio"
+        android:layout_width="322dp"
+        android:layout_height="48dp"
+        android:layout_below="@+id/producto"
+        android:layout_alignParentStart="true"
+        android:layout_marginStart="15dp"
+        android:layout_marginTop="40dp"
+        android:layout_marginBottom="8dp"
+        android:ems="10"
+        android:hint="@string/ingresaPrecioVenta"
+        android:inputType="phone"
+        android:text=""
+        android:textColor="#FFFFFF"
+        android:textColorHint="#FFFFFF"
+        android:textSize="20sp" />
+
+    <EditText
+        android:id="@+id/precioCompra"
+        android:layout_width="322dp"
+        android:layout_height="48dp"
+        android:layout_below="@+id/precio"
+        android:layout_alignParentStart="true"
+        android:layout_marginStart="15dp"
+        android:layout_marginTop="0dp"
+        android:layout_marginBottom="8dp"
+        android:ems="10"
+        android:hint="@string/ingresaPrecioCompra"
+        android:inputType="phone"
+        android:text=""
+        android:textColor="#FFFFFF"
+        android:textColorHint="#FFFFFF"
+        android:textSize="20sp" />
+
+    <EditText
+        android:id="@+id/descuento"
+        android:layout_width="322dp"
+        android:layout_height="48dp"
+        android:layout_below="@+id/precioCompra"
+        android:layout_alignParentStart="true"
+        android:layout_marginStart="15dp"
+        android:layout_marginTop="0dp"
+        android:layout_marginBottom="8dp"
+        android:ems="10"
+        android:hint="@string/Descuento"
+        android:inputType="phone"
+        android:text=""
+        android:textColor="#FFFFFF"
+        android:textColorHint="#FFFFFF"
+        android:textSize="20sp" />
+
+
+
+
+    <EditText
+        android:id="@+id/cantidad"
+        android:layout_width="322dp"
+        android:layout_height="48dp"
+        android:layout_below="@+id/descuento"
+        android:layout_alignParentStart="true"
+        android:layout_marginStart="15dp"
+        android:layout_marginTop="0dp"
+        android:layout_marginBottom="8dp"
+        android:ems="10"
+        android:hint="@string/ingresaCantidad"
+        android:inputType="phone"
+        android:text=""
+        android:textColor="#FFFFFF"
+        android:textColorHint="#FFFFFF"
+        android:textSize="20sp" />
+
+
+    <ImageView
+        android:id="@+id/imagenProducto"
+        android:layout_width="200dp"
+        android:layout_height="200dp"
+        android:layout_below="@+id/cantidad"
+        android:layout_marginTop="10dp"
+        android:layout_marginStart="30dp"
+        android:src="@drawable/baseline_image_24" />
+
+
+
+    <ImageButton
+        android:id="@+id/añadir"
+        android:layout_width="72dp"
+        android:layout_height="72dp"
+        android:layout_below="@+id/cantidad"
+        android:layout_marginStart="260dp"
+        android:layout_marginTop="70dp"
+        app:srcCompat="@android:drawable/ic_input_add"
+        />
+
+    <ImageButton
+        android:id="@+id/camara"
+        android:layout_width="62dp"
+        android:layout_height="62dp"
+        android:layout_below="@+id/textView4"
+        android:layout_marginStart="260dp"
+        android:layout_marginTop="8dp"
+        app:srcCompat="@android:drawable/ic_menu_camera"
+         />
+
+
+
+    <com.google.android.material.bottomnavigation.BottomNavigationView
+        android:id="@+id/bottomNavigationView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_marginTop="30dp"
+        android:layout_marginBottom="0dp"
+        android:background="@drawable/fondo_degradado"
+        android:elevation="2dp"
+        app:itemIconSize="30dp"
+        app:itemIconTint="@drawable/item_selector"
+        app:itemRippleColor="@android:color/transparent"
+        app:labelVisibilityMode="unlabeled"
+        app:menu="@menu/bottom_menu_productos" />
+
+
+</RelativeLayout>

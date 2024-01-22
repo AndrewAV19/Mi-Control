@@ -1,0 +1,134 @@
+<resources xmlns:tools="http://schemas.android.com/tools">
+    <!-- Base application theme. -->
+    <style name="Theme.MiControl" parent="Theme.MaterialComponents.DayNight.NoActionBar">
+        <!-- Primary brand color. -->
+        <item name="colorPrimary">@color/colorUno</item>
+        <item name="colorPrimaryVariant">@color/colorDos</item>
+        <item name="colorOnPrimary">@color/colorUno</item>
+        <!-- Secondary brand color. -->
+        <item name="colorSecondary">@color/teal_200</item>
+        <item name="colorSecondaryVariant">@color/teal_700</item>
+        <item name="colorOnSecondary">@color/colorUno</item>
+        <!-- Status bar color. -->
+        <item name="android:statusBarColor">@color/colorUno</item>
+        <!-- Customize your theme here. -->
+    </style>
+
+    <style name="MySpinnerDropDownItemStyle" parent="Widget.AppCompat.DropDownItem.Spinner">
+        <item name="android:background">@drawable/fondo_degradado2</item>
+    </style>
+
+    <style name="SlideActivityAnimation" parent="@android:style/Animation.Activity">
+        <item name="android:activityOpenEnterAnimation">@anim/slide_in</item>
+        <item name="android:activityOpenExitAnimation">@anim/slide_out</item>
+    </style>
+
+    <style name="DialogTheme" parent="Theme.AppCompat.Light.Dialog">
+        <item name="colorAccent">@color/colorDos</item>
+    </style>
+
+    <style name="DialogTheme.Cafe" parent="Theme.AppCompat.Light.Dialog">
+        <item name="colorAccent">@color/cafeDos</item>
+    </style>
+
+    <style name="DialogTheme.Azul" parent="Theme.AppCompat.Light.Dialog">
+        <item name="colorAccent">@color/azulDos</item>
+    </style>
+
+    <style name="DialogTheme.Gris" parent="Theme.AppCompat.Light.Dialog">
+        <item name="colorAccent">@color/grisDos</item>
+    </style>
+
+    <style name="DialogTheme.Verde" parent="Theme.AppCompat.Light.Dialog">
+        <item name="colorAccent">@color/verdeDos</item>
+    </style>
+
+    <style name="DialogTheme.Morado" parent="Theme.AppCompat.Light.Dialog">
+        <item name="colorAccent">@color/moradoDos</item>
+    </style>
+
+    <style name="DialogTheme.Rosa" parent="Theme.AppCompat.Light.Dialog">
+        <item name="colorAccent">@color/rosaDos</item>
+    </style>
+
+    <!-- Define el resto de estilos para otros colores si es necesario -->
+
+
+    <style name="SpinnerStyle" parent="Widget.AppCompat.Spinner">
+        <item name="android:background">@drawable/fondo_degradado2</item>
+        <item name="android:textColor">@color/black</item>
+    </style>
+
+
+    <style name="Theme.MiControl.Cafe" parent="Theme.MaterialComponents.DayNight.NoActionBar">
+        <item name="colorPrimary">@color/cafeUno</item>
+        <item name="colorPrimaryVariant">@color/cafeDos</item>
+        <item name="colorOnPrimary">@color/cafeUno</item>
+        <!-- Secondary brand color. -->
+        <item name="colorSecondary">@color/teal_200</item>
+        <item name="colorSecondaryVariant">@color/teal_700</item>
+        <item name="colorOnSecondary">@color/cafeUno</item>
+        <!-- Status bar color. -->
+        <item name="android:statusBarColor">@color/cafeUno</item>
+    </style>
+
+    <style name="Theme.MiControl.Azul" parent="Theme.MaterialComponents.DayNight.NoActionBar">
+        <item name="colorPrimary">@color/azulUno</item>
+        <item name="colorPrimaryVariant">@color/azulDos</item>
+        <item name="colorOnPrimary">@color/azulUno</item>
+        <!-- Secondary brand color. -->
+        <item name="colorSecondary">@color/teal_200</item>
+        <item name="colorSecondaryVariant">@color/teal_700</item>
+        <item name="colorOnSecondary">@color/azulUno</item>
+        <!-- Status bar color. -->
+        <item name="android:statusBarColor">@color/azulUno</item>
+    </style>
+
+    <style name="Theme.MiControl.Gris" parent="Theme.MaterialComponents.DayNight.NoActionBar">
+        <item name="colorPrimary">@color/grisUno</item>
+        <item name="colorPrimaryVariant">@color/grisDos</item>
+        <item name="colorOnPrimary">@color/grisUno</item>
+        <!-- Secondary brand color. -->
+        <item name="colorSecondary">@color/teal_200</item>
+        <item name="colorSecondaryVariant">@color/teal_700</item>
+        <item name="colorOnSecondary">@color/grisUno</item>
+        <!-- Status bar color. -->
+        <item name="android:statusBarColor">@color/grisUno</item>
+    </style>
+
+    <style name="Theme.MiControl.Verde" parent="Theme.MaterialComponents.DayNight.NoActionBar">
+        <item name="colorPrimary">@color/verdeUno</item>
+        <item name="colorPrimaryVariant">@color/verdeDos</item>
+        <item name="colorOnPrimary">@color/verdeUno</item>
+        <!-- Secondary brand color. -->
+        <item name="colorSecondary">@color/teal_200</item>
+        <item name="colorSecondaryVariant">@color/teal_700</item>
+        <item name="colorOnSecondary">@color/verdeUno</item>
+        <!-- Status bar color. -->
+        <item name="android:statusBarColor">@color/verdeUno</item>
+    </style>
+
+    <style name="Theme.MiControl.Morado" parent="Theme.MaterialComponents.DayNight.NoActionBar">
+        <item name="colorPrimary">@color/moradoUno</item>
+        <item name="colorPrimaryVariant">@color/moradoDos</item>
+        <item name="colorOnPrimary">@color/moradoUno</item>
+        <!-- Secondary brand color. -->
+        <item name="colorSecondary">@color/teal_200</item>
+        <item name="colorSecondaryVariant">@color/teal_700</item>
+        <item name="colorOnSecondary">@color/moradoUno</item>
+        <!-- Status bar color. -->
+        <item name="android:statusBarColor">@color/moradoUno</item>
+    </style>
+
+    <style name="Theme.MiControl.Rosa" parent="Theme.MaterialComponents.DayNight.NoActionBar">
+        <item name="colorPrimary">@color/rosaUno</item>
+        <item name="colorPrimaryVariant">@color/rosaDos</item>
+        <item name="colorOnPrimary">@color/rosaUno</item>
+        <!-- Secondary brand color. -->
+        <item name="colorSecondary">@color/teal_200</item>
+        <item name="colorSecondaryVariant">@color/teal_700</item>
+        <item name="colorOnSecondary">@color/rosaUno</item>
+        <!-- Status bar color. -->
+        <item name="android:statusBarColor">@color/rosaUno</item>
+    </style>
+</resources>

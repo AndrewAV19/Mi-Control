@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+        <!-- Array de nombres de colores -->
+    <string-array name="colors_array">
+        <item>cafe</item>
+        <item>azul</item>
+        <item>gris</item>
+        <item>verde</item>
+        <item>morado</item>
+        <item>rosa</item>
+    </string-array>
+
+
+
+    <!-- Array de colores para café -->
+    <string-array name="cafe_colors">
+        <item>@color/cafeUno</item>
+        <item>@color/cafeDos</item>
+        <item>@color/cafeTres</item>
+    </string-array>
+
+    <!-- Array de colores para azul -->
+    <string-array name="azul_colors">
+        <item>@color/azulUno</item>
+        <item>@color/azulDos</item>
+        <item>@color/azulTres</item>
+    </string-array>
+
+    <!-- Array de colores para gris -->
+    <string-array name="gris_colors">
+        <item>@color/grisUno</item>
+        <item>@color/grisDos</item>
+        <item>@color/grisTres</item>
+    </string-array>
+
+    <!-- Array de colores para verde -->
+    <string-array name="verde_colors">
+        <item>@color/verdeUno</item>
+        <item>@color/verdeDos</item>
+        <item>@color/verdeTres</item>
+    </string-array>
+
+    <!-- Array de colores para morado -->
+    <string-array name="morado_colors">
+        <item>@color/moradoUno</item>
+        <item>@color/moradoDos</item>
+        <item>@color/moradoTres</item>
+    </string-array>
+
+    <!-- Array de colores para rosa -->
+    <string-array name="rosa_colors">
+        <item>@color/rosaUno</item>
+        <item>@color/rosaDos</item>
+        <item>@color/rosaTres</item>
+    </string-array>
+</resources>
